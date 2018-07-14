@@ -15,43 +15,43 @@
 }
 
 
-.je_social_row {
+.wp_social_row {
 	display: block;
 	float: left;
 	width: 50%;
 	padding-right: 50px;
 }
-.je_social_row label {
+.wp_social_row label {
 	display: inline-block;
 	margin-bottom: 3px;
 	font-weight: bold;
 }
-input.je_social_field {
+input.wp_social_field {
 	display: block;
 	width: 100%;
 	min-width: 300px;
 }
-.je_social_row_radio {
+.wp_social_row_radio {
 	padding-top: 5px;
 }
-.je_social_row_radio label {
+.wp_social_row_radio label {
 	font-weight: normal;
 	margin-right: 20px;
 }
 
 
-.je_social_block {
+.wp_social_block {
 	margin-bottom: 20px;
 }
 
-.je_social_bg {
+.wp_social_bg {
 	background: #ffffff;
 	border: 1px solid #e5e5e5;
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
 			box-shadow: 0 1px 1px rgba(0,0,0,.04);
 }
 
-.je_social_block_title {
+.wp_social_block_title {
 	padding: 10px 15px 10px 40px;
 	font-size: 14px;
     font-weight: bold;
@@ -60,34 +60,34 @@ input.je_social_field {
 	background-position: 7px 50%;
 }
 
-.je_social_block_title_phone {
+.wp_social_block_title_phone {
 	background-image: url("../images/phone.png");
 }
-.je_social_block_title_email {
+.wp_social_block_title_email {
 	background-image: url("../images/email.png");
 }
-.je_social_block_title_fb {
+.wp_social_block_title_fb {
 	background-image: url("../images/fb.png");
 }
-.je_social_block_title_tw {
+.wp_social_block_title_tw {
 	background-image: url("../images/tw.png");
 }
-.je_social_block_title_in {
+.wp_social_block_title_in {
 	background-image: url("../images/in.png");
 }
-.je_social_block_title_yt {
+.wp_social_block_title_yt {
 	background-image: url("../images/yt.png");
 }
-.je_social_block_title_gp {
+.wp_social_block_title_gp {
 	background-image: url("../images/gp.png");
 }
 
-.je_social_block_content {
+.wp_social_block_content {
 	padding: 15px;
 }
 
 
-input.je_social_save_button {
+input.wp_social_save_button {
 	padding: 0px 40px !important;
 	margin-top: 5px !important;
 }
