@@ -1,7 +1,7 @@
 <?php
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 /**
- * Plugin Name: JE Social Settings
+ * Plugin Name: WP Social Settings
  * Description: Settings for social links
  * Version: 1.0.0
  * Author: John Ericta
@@ -72,6 +72,22 @@ function wp_social() {
 						<label>Show Facebook link in footer</label>
 						<div class="wp_social_row_radio">
 							<label for="facebook_show"><input type="radio" id="facebook_show" name="wp_social[facebook_show]" value="1" <?php echo (isset($wp_social['facebook_show']) AND $wp_social['facebook_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="facebook_hide"><input type="radio" id="facebook_hide" name="wp_social[facebook_show]" value="0" <?php echo ($wp_social['facebook_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="clearfix wp_social_block wp_social_bg">
+				<div class="wp_social_block_title wp_social_block_title_ig">Instagram Settings</div>
+				<div class="clearfix wp_social_block_content">
+					<div class="wp_social_row">
+						<label for="instagram_link">Instagram link</label>
+						<input type="text" id="instagram_link" class="wp_social_field" name="wp_social[instagram_link]" value="<?php echo (isset($wp_social['instagram_link'])) ? stripslashes($wp_social['instagram_link']) : '' ; ?>" placeholder="Link to Instagram page" />
+					</div>
+					<div class="wp_social_row">
+						<label>Show Instagram link in footer</label>
+						<div class="wp_social_row_radio">
+							<label for="instagram_show"><input type="radio" id="instagram_show" name="wp_social[instagram_show]" value="1" <?php echo (isset($wp_social['instagram_show']) AND $wp_social['instagram_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="instagram_hide"><input type="radio" id="instagram_hide" name="wp_social[instagram_hide]" value="0" <?php echo ($wp_social['instagram_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
 						</div>
 					</div>
 				</div>

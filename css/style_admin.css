@@ -69,6 +69,9 @@ input.wp_social_field {
 .wp_social_block_title_fb {
 	background-image: url("../images/fb.png");
 }
+.wp_social_block_title_ig {
+	background-image: url("../images/ig.jpg");
+}
 .wp_social_block_title_tw {
 	background-image: url("../images/tw.png");
 }
