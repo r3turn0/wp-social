@@ -45,8 +45,8 @@ function wp_social() {
 				<div class="wp_social_block_title wp_social_block_title_phone">Phone Settings</div>
 				<div class="clearfix wp_social_block_content">
 					<div class="wp_social_row">
-						<label for="phone_header">Phone number in header</label>
-						<input type="text" id="phone_header" class="wp_social_field" name="wp_social[phone_header]" value="<?php echo (isset($wp_social['phone_header'])) ? stripslashes($wp_social['phone_header']) : '' ; ?>" placeholder="Phone number, without +1. It must be like: 888.416.3992" />
+						<label for="phone">Contact phone number</label>
+						<input type="text" id="phone" class="wp_social_field" name="wp_social[phone]" value="<?php echo (isset($wp_social['phone'])) ? stripslashes($wp_social['phone']) : '' ; ?>" placeholder="Phone number ie: 555.555.5555" />
 					</div>
 				</div>
 			</div>
@@ -55,8 +55,8 @@ function wp_social() {
 				<div class="wp_social_block_title wp_social_block_title_email">Email Settings</div>
 				<div class="clearfix wp_social_block_content">
 					<div class="wp_social_row">
-						<label for="email_field">Email for contacts page</label>
-						<input type="text" id="email_field" class="wp_social_field" name="wp_social[email]" value="<?php echo (isset($wp_social['email'])) ? stripslashes($wp_social['email']) : '' ; ?>" placeholder="Email address" />
+						<label for="email">Contact email</label>
+						<input type="text" id="email" class="wp_social_field" name="wp_social[email]" value="<?php echo (isset($wp_social['email'])) ? stripslashes($wp_social['email']) : '' ; ?>" placeholder="Email address" />
 					</div>
 				</div>
 			</div>
@@ -69,7 +69,7 @@ function wp_social() {
 						<input type="text" id="facebook_link" class="wp_social_field" name="wp_social[facebook_link]" value="<?php echo (isset($wp_social['facebook_link'])) ? stripslashes($wp_social['facebook_link']) : '' ; ?>" placeholder="Link to Facebook page" />
 					</div>
 					<div class="wp_social_row">
-						<label>Show Facebook link in footer</label>
+						<label>Show Facebook link</label>
 						<div class="wp_social_row_radio">
 							<label for="facebook_show"><input type="radio" id="facebook_show" name="wp_social[facebook_show]" value="1" <?php echo (isset($wp_social['facebook_show']) AND $wp_social['facebook_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="facebook_hide"><input type="radio" id="facebook_hide" name="wp_social[facebook_show]" value="0" <?php echo ($wp_social['facebook_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
 						</div>
@@ -85,7 +85,7 @@ function wp_social() {
 						<input type="text" id="instagram_link" class="wp_social_field" name="wp_social[instagram_link]" value="<?php echo (isset($wp_social['instagram_link'])) ? stripslashes($wp_social['instagram_link']) : '' ; ?>" placeholder="Link to Instagram page" />
 					</div>
 					<div class="wp_social_row">
-						<label>Show Instagram link in footer</label>
+						<label>Show Instagram link</label>
 						<div class="wp_social_row_radio">
 							<label for="instagram_show"><input type="radio" id="instagram_show" name="wp_social[instagram_show]" value="1" <?php echo (isset($wp_social['instagram_show']) AND $wp_social['instagram_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="instagram_hide"><input type="radio" id="instagram_hide" name="wp_social[instagram_hide]" value="0" <?php echo ($wp_social['instagram_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
 						</div>
@@ -101,7 +101,7 @@ function wp_social() {
 						<input type="text" id="youtube_link" class="wp_social_field" name="wp_social[youtube_link]" value="<?php echo (isset($wp_social['youtube_link'])) ? stripslashes($wp_social['youtube_link']) : '' ; ?>" placeholder="Link to YouTube page" />
 					</div>
 					<div class="wp_social_row">
-						<label>Show YouTube link in footer</label>
+						<label>Show YouTube link</label>
 						<div class="wp_social_row_radio">
 							<label for="youtube_show"><input type="radio" id="youtube_show" name="wp_social[youtube_show]" value="1" <?php echo (isset($wp_social['youtube_show']) AND $wp_social['youtube_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="youtube_hide"><input type="radio" id="youtube_hide" name="wp_social[youtube_show]" value="0" <?php echo ($wp_social['youtube_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
 						</div>
@@ -117,7 +117,7 @@ function wp_social() {
 						<input type="text" id="gplus_link" class="wp_social_field" name="wp_social[gplus_link]" value="<?php echo (isset($wp_social['gplus_link'])) ? stripslashes($wp_social['gplus_link']) : '' ; ?>" placeholder="Link to Google+ page" />
 					</div>
 					<div class="wp_social_row">
-						<label>Show Google+ link in footer</label>
+						<label>Show Google+ link</label>
 						<div class="wp_social_row_radio">
 							<label for="gplus_show"><input type="radio" id="gplus_show" name="wp_social[gplus_show]" value="1" <?php echo (isset($wp_social['gplus_show']) AND $wp_social['gplus_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="gplus_hide"><input type="radio" id="gplus_hide" name="wp_social[gplus_show]" value="0" <?php echo ($wp_social['gplus_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
 						</div>
@@ -133,7 +133,7 @@ function wp_social() {
 						<input type="text" id="github_link" class="wp_social_field" name="wp_social[github_link]" value="<?php echo (isset($wp_social['github_link'])) ? stripslashes($wp_social['github_link']) : '' ; ?>" placeholder="Link to GitHub page" />
 					</div>
 					<div class="wp_social_row">
-						<label>Show GitHub link in footer</label>
+						<label>Show GitHub link</label>
 						<div class="wp_social_row_radio">
 							<label for="github_show"><input type="radio" id="github_show" name="wp_social[github_show]" value="1" <?php echo (isset($wp_social['github_show']) AND $wp_social['github_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="github_hide"><input type="radio" id="github_hide" name="wp_social[github_show]" value="0" <?php echo ($wp_social['github_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
 						</div>
@@ -149,7 +149,7 @@ function wp_social() {
 						<input type="text" id="stackoverflow_link" class="wp_social_field" name="wp_social[stackoverflow_link]" value="<?php echo (isset($wp_social['stackoverflow_link'])) ? stripslashes($wp_social['stackoverflow_link']) : '' ; ?>" placeholder="Link to StackOverflow page" />
 					</div>
 					<div class="wp_social_row">
-						<label>Show StackOverflow link in footer</label>
+						<label>Show StackOverflow link</label>
 						<div class="wp_social_row_radio">
 							<label for="stackoverflow_show"><input type="radio" id="stackoverflow_show" name="wp_social[stackoverflow_show]" value="1" <?php echo (isset($wp_social['stackoverflow_show']) AND $wp_social['stackoverflow_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="stackoverflow_hide"><input type="radio" id="stackoverflow_hide" name="wp_social[stackoverflow_show]" value="0" <?php echo ($wp_social['stackoverflow_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
 						</div>
