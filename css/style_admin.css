@@ -13,8 +13,6 @@
 	content: " ";
 	clear: both;
 }
-
-
 .wp_social_row {
 	display: block;
 	float: left;
@@ -38,19 +36,15 @@ input.wp_social_field {
 	font-weight: normal;
 	margin-right: 20px;
 }
-
-
 .wp_social_block {
 	margin-bottom: 20px;
 }
-
 .wp_social_bg {
 	background: #ffffff;
 	border: 1px solid #e5e5e5;
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
-			box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
 }
-
 .wp_social_block_title {
 	padding: 10px 15px 10px 40px;
 	font-size: 14px;
@@ -84,14 +78,16 @@ input.wp_social_field {
 .wp_social_block_title_gp {
 	background-image: url("../images/gp.png");
 }
-
+.wp_social_block_title_gh {
+	background-image: url("../images/gh.png");
+}
+.wp_social_block_title_so {
+	background-image: url("../images/so.png");
+}
 .wp_social_block_content {
 	padding: 15px;
 }
-
-
 input.wp_social_save_button {
 	padding: 0px 40px !important;
 	margin-top: 5px !important;
 }
-

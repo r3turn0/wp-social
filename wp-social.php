@@ -12,10 +12,10 @@ add_action( 'admin_menu', 'wp_social_register_menu_page' );
 function wp_social_register_menu_page() {
 	//add_options_page( $page_title, $menu_title, $capability, $menu_slug, $function);
 	$page = add_options_page(
-		'Communications Settings',
-		'Communications',
+		'WP Social Settings',
+		'WP Social Settings',
 		'manage_options',
-		'options-communications.php',
+		'options-wp-social-settings.php',
 		'wp_social'
 	);
 	add_action('admin_print_styles-'. $page, 'wp_social_admin_styles');
@@ -29,7 +29,7 @@ function wp_social() {
 	
 	if(isset($_POST['wp_social'])) {
 		update_option('wp_social', $_POST['wp_social'], false);
-		echo '<div id="message" class="updated fade"><p><strong>Communications Settings updated!</strong></p></div>';
+		echo '<div id="message" class="updated fade"><p><strong>WP Social Settings updated!</strong></p></div>';
 		$wp_social = $_POST['wp_social'];
 	} else {
 		$wp_social = get_option('wp_social');
@@ -37,7 +37,7 @@ function wp_social() {
 ?>
 	
 	<div class="wrap">
-		<h2>Communications Settings</h2>
+		<h2>WP Social Settings</h2>
 		<br />
 		
 		<form action="" method="post">
@@ -120,6 +120,38 @@ function wp_social() {
 						<label>Show Google+ link in footer</label>
 						<div class="wp_social_row_radio">
 							<label for="gplus_show"><input type="radio" id="gplus_show" name="wp_social[gplus_show]" value="1" <?php echo (isset($wp_social['gplus_show']) AND $wp_social['gplus_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="gplus_hide"><input type="radio" id="gplus_hide" name="wp_social[gplus_show]" value="0" <?php echo ($wp_social['gplus_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="clearfix wp_social_block wp_social_bg">
+				<div class="wp_social_block_title wp_social_block_title_gh">GitHub Settings</div>
+				<div class="clearfix wp_social_block_content">
+					<div class="wp_social_row">
+						<label for="github_link">GitHub link</label>
+						<input type="text" id="github_link" class="wp_social_field" name="wp_social[github_link]" value="<?php echo (isset($wp_social['github_link'])) ? stripslashes($wp_social['github_link']) : '' ; ?>" placeholder="Link to GitHub page" />
+					</div>
+					<div class="wp_social_row">
+						<label>Show GitHub link in footer</label>
+						<div class="wp_social_row_radio">
+							<label for="github_show"><input type="radio" id="github_show" name="wp_social[github_show]" value="1" <?php echo (isset($wp_social['github_show']) AND $wp_social['github_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="github_hide"><input type="radio" id="github_hide" name="wp_social[github_show]" value="0" <?php echo ($wp_social['github_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="clearfix wp_social_block wp_social_bg">
+				<div class="wp_social_block_title wp_social_block_title_so">StackOverflow Settings</div>
+				<div class="clearfix wp_social_block_content">
+					<div class="wp_social_row">
+						<label for="stackoverflow_link">StackOverflow link</label>
+						<input type="text" id="stackoverflow_link" class="wp_social_field" name="wp_social[stackoverflow_link]" value="<?php echo (isset($wp_social['stackoverflow_link'])) ? stripslashes($wp_social['stackoverflow_link']) : '' ; ?>" placeholder="Link to StackOverflow page" />
+					</div>
+					<div class="wp_social_row">
+						<label>Show StackOverflow link in footer</label>
+						<div class="wp_social_row_radio">
+							<label for="stackoverflow_show"><input type="radio" id="stackoverflow_show" name="wp_social[stackoverflow_show]" value="1" <?php echo (isset($wp_social['stackoverflow_show']) AND $wp_social['stackoverflow_show'] == 1) ? 'checked' : '' ; ?> /> show</label> <label for="stackoverflow_hide"><input type="radio" id="stackoverflow_hide" name="wp_social[stackoverflow_show]" value="0" <?php echo ($wp_social['stackoverflow_show'] == 0) ? 'checked' : '' ; ?> /> hide</label>
 						</div>
 					</div>
 				</div>
